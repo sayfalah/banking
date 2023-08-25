@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="32" tokens="118">
+      <file begintoken="874" column="2" endcolumn="14" endline="62" endtoken="991"
+            line="31"
+            path="/home/malekgh/EBANK-FULLSTACK/BACKEND/src/main/java/com/brody/ebankingbackend/dto/CurrentBankAccountDTO.java"/>
+      <file begintoken="1344" column="2" endcolumn="14" endline="62" endtoken="1461"
+            line="29"
+            path="/home/malekgh/EBANK-FULLSTACK/BACKEND/src/main/java/com/brody/ebankingbackend/dto/SavingBankAccountDTO.java"/>
+      <codefragment><![CDATA[	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
+	public AccountStatus getStatus() {
+		return status;
+	}
+	public void setStatus(AccountStatus status) {
+		this.status = status;
+	}
+	public CustomerDTO getCustomerDTO() {
+		return customerDTO;
+	}
+	public void setCustomerDTO(CustomerDTO customerDTO) {
+		this.customerDTO = customerDTO;
+	}
+	public double getOverDraft() {]]></codefragment>
+   </duplication>
+</pmd-cpd>

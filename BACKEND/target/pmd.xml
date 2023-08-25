@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2023-07-14T11:24:42.171">
+<file name="/home/malekgh/EBANK-FULLSTACK/BACKEND/src/main/java/com/brody/ebankingbackend/EbankingBackendApplication.java">
+<violation beginline="15" endline="15" begincolumn="1" endcolumn="73" rule="UnnecessaryImport" ruleset="Code Style" package="com.brody.ebankingbackend" class="EbankingBackendApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'com.brody.ebankingbackend.exception.BalanceNotSufficientException'
+</violation>
+<violation beginline="16" endline="16" begincolumn="1" endcolumn="72" rule="UnnecessaryImport" ruleset="Code Style" package="com.brody.ebankingbackend" class="EbankingBackendApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'com.brody.ebankingbackend.exception.BankAccountNotFoundException'
+</violation>
+</file>
+<file name="/home/malekgh/EBANK-FULLSTACK/BACKEND/src/main/java/com/brody/ebankingbackend/restcontroller/BankAccountRestController.java">
+<violation beginline="9" endline="9" begincolumn="1" endcolumn="44" rule="UnnecessaryImport" ruleset="Code Style" package="com.brody.ebankingbackend.restcontroller" class="BankAccountRestController" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.springframework.data.domain.Sort'
+</violation>
+<violation beginline="97" endline="97" begincolumn="25" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="com.brody.ebankingbackend.restcontroller" class="BankAccountRestController" method="listAccounts" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="/home/malekgh/EBANK-FULLSTACK/BACKEND/src/main/java/com/brody/ebankingbackend/service/BankAccountServiceImpl.java">
+<violation beginline="11" endline="11" begincolumn="1" endcolumn="48" rule="UnnecessaryImport" ruleset="Code Style" package="com.brody.ebankingbackend.service" class="BankAccountServiceImpl" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.springframework.data.domain.PageImpl'
+</violation>
+</file>
+</pmd>
