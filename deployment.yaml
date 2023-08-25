@@ -1,0 +1,19 @@
+---
+- name: Deploy Resources to Kubernetes Cluster
+  
+  tasks:
+    - name: Apply MySQL Deployment
+      command: kubectl apply -f mysql-deployment.yaml
+
+    - name: Apply Frontend Deployment
+      command: kubectl apply -f frontend-deployment.yaml
+
+    - name: Apply Backend Deployment
+      command: kubectl apply -f backend-deployment.yaml
+
+    - name: Apply Frontend Service
+      command: kubectl apply -f frontend-service.yaml
+
+    - name: Apply MySQL Service
+      command: kubectl apply -f mysql-service.yaml
+

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-mysql
+  namespace: my-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-mysql
+  template:
+    metadata:
+      labels:
+        app: my-mysql
+    spec:
+       containers:
+        - env:
+            - name: MYSQL_DATABASE
+              value: E-BANK
+            - name: MYSQL_ROOT_PASSWORD
+              value: root
+          image: mysql
+          name: my-mysql
+          ports:
+            - containerPort: 3306
+          resources: {}
+status: {}

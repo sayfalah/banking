@@ -1,0 +1,28 @@
+# Configuration de base de Harbor
+hostname: harbor.example.com
+http:
+  port: 8080
+https:
+  port: 8443
+  certificate: /etc/harbor/certs/harbor.crt
+  private_key: /etc/harbor/certs/harbor.key
+harbor_admin_password: Harbor12345
+
+# Configuration du stockage
+data_volume: /data
+database:
+  password: db_password
+
+# Configuration de l'authentification
+auth_mode: db_auth
+
+# Configuration des notifications par e-mail (facultatif)
+email:
+  host: malek.alghraba@gmail.com
+  port: 25
+  username: admin@example.com
+  password: email_password
+  from: admin@example.com
+  insecure: true
+
+# Autres configurations et paramètres supplémentaires...

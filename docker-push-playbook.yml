@@ -1,0 +1,19 @@
+---
+- name: Push Docker Images
+  hosts: localhost
+  tasks:
+    - name: Log in to DockerHub
+      command: docker login -u <username> -p <password>
+    
+    - name: Push frontend Docker image
+      command: docker push malekghraba/frontend:1
+      
+    - name: Push backend Docker image
+      command: docker push malekghraba/backend:1
+      
+    - name: Push MySQL Docker image
+      command: docker push malekghraba/mysql:1
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1690f717c1a1f96db18de4a6a9d94adf5c87539e

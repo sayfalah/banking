@@ -1,0 +1,44 @@
+server {
+  listen 80;
+  server_name localhost;
+  root /usr/share/nginx/html;
+  index index.html;
+
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}
+
+Create a docker-compose.yml file in the root directory of your project with the following content:
+
+yaml
+
+version: "3.8"
+services:
+  angular-app:
+    build:
+      context: ./angular-app
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+
+  spring-boot-app:
+    build:
+      context: ./spring-boot-app
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+Build and run the containers:
+
+    Open a terminal, navigate to the project's root directory, and run the following command:
+
+shell
+
+    docker-compose up --build
+
+    This command will build the Docker images for the Angular and Spring Boot applications and run the containers.
+
+    The Spring Boot API will be accessible at http://localhost:8080.
+
+That's it! You have successfully deployed an Angular and Spring Boot application on NGINX using Docker Compose.

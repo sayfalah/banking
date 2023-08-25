@@ -1,0 +1,28 @@
+---
+- name: Deploy Resources to Kubernetes Cluster
+  hosts: localhost
+  tasks:
+    - name: Apply MySQL Deployment
+      k8s:
+        state: present
+        definition: "{{ lookup('file', 'mysql-deployment.yaml') }}"
+    - name: Apply Frontend Deployment
+      k8s:
+        state: present
+        definition: "{{ lookup('file', 'frontend-deployment.yaml') }}"
+    - name: Apply Backend Deployment
+      k8s:
+        state: present
+        definition: "{{ lookup('file', 'backend-deployment.yaml') }}"
+    - name: Apply Frontend Service
+      k8s:
+        state: present
+        definition: "{{ lookup('file', 'frontend-service.yaml') }}"
+    - name: Apply MySQL Service
+      k8s:
+        state: present
+        definition: "{{ lookup('file', 'mysql-service.yaml') }}"
+    - name: Apply Backend Service
+      k8s:
+        state: present
+        definition: "{{ lookup('file', 'backend-service.yaml') }}"
